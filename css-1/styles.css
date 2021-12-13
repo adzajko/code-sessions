@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-container__header,
+.main-container__footer {
+  padding: 10px;
+}
+
+.amazon-button {
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.1s;
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  margin: 1rem auto;
+  border: none;
+  padding: 10px;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.amazon-button:hover {
+  background-color: white;
+  color: palevioletred;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+}
