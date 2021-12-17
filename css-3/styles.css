@@ -1,0 +1,75 @@
+/* :root {
+  --app-primary: #107ab0;
+  --app-secondary: #fd5956;
+  --app-light: #f5f5f5;
+  --app-dark: #212121;
+  --app-shadows: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  --app-h1: 32px;
+} */
+
+.theme {
+  transition: all 0.4s linear;
+  --app-primary: #107ab0;
+  --app-secondary: #fd5956;
+  --app-light: #f5f5f5;
+  --app-dark: #212121;
+  --app-shadows: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  --app-h1: 32px;
+  --app-btn-font: 22px;
+}
+
+.dark-theme {
+  transition: all 0.4s linear;
+  --app-primary: #212121;
+  --app-secondary: #d0fefe;
+  --app-light: #212121;
+  --app-dark: #f5f5f5;
+  --app-shadows: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+  --app-h1: 32px;
+  --app-btn-font: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.h1 {
+  font-size: var(--app-h1);
+}
+
+.container {
+  background-color: var(--app-primary);
+  height: 400px;
+  width: 400px;
+  margin: 100px auto;
+  border-radius: 15px;
+  box-shadow: var(--app-shadows);
+}
+
+#theme-toggler {
+  display: block;
+  cursor: pointer;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: var(--app-btn-font);
+  background-color: var(--app-secondary);
+  color: var(--app-light);
+  border: 1px solid var(--app-secondary);
+  border-radius: 1000px;
+  box-shadow: var(--app-shadows);
+  transition: 0.15s all ease-out;
+}
+
+#theme-toggler:hover {
+  background-color: var(--app-light);
+  color: var(--app-secondary);
+}
