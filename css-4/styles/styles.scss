@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin modernLaptop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+.main-container {
+  padding: 10px;
+  @include modernLaptop {
+    padding: 20px;
+  }
+
+  &__heading {
+    font-size: 36px;
+
+    &:hover {
+      background-color: maroon;
+    }
+  }
+}

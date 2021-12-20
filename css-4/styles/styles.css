@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  padding: 10px;
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    padding: 20px;
+  }
+}
+
+.main-container__heading {
+  font-size: 36px;
+}
+
+.main-container__heading:hover {
+  background-color: maroon;
+}
+/*# sourceMappingURL=styles.css.map */
